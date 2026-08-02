@@ -69,7 +69,6 @@
     transition: transform $anim-duration ease-in-out;
 
     &:hover {
-      cursor: pointer;
       transform: translateY(-20px);
     }
   }

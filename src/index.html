@@ -10,16 +10,16 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
+    <meta
+      name="description"
+      content="Discover modern urban bikes designed for fast, comfortable city rides."
+    />
     <title>Bike</title>
     <link
       rel="icon"
-      type="image/png"
+      type="image/svg+xml"
       sizes="32x32"
       href="./images/Header_logo.svg"
-    />
-    <link
-      rel="preconnect"
-      href="https://fonts.googleapis.com"
     />
     <link
       rel="preconnect"
@@ -31,7 +31,7 @@
       crossorigin="anonymous"
     />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -45,18 +45,24 @@
   </head>
   <!-- #endregion -->
   <body class="page__body">
-    <header class="header">
+    <header
+      class="header"
+      id="top"
+    >
       <div class="container">
         <div class="header__content">
           <div class="top-bar">
             <a
-              href="#"
+              href="#top"
               class="top-bar__logo"
+              aria-label="Home"
             >
               <img
                 src="images/Header_logo_mobile.svg"
                 alt="Base logo"
                 class="logo"
+                width="130"
+                height="38"
               />
             </a>
             <div class="top-bar__icons">
@@ -70,11 +76,13 @@
                 <a
                   href="tel:+1 234 555-55-55"
                   class="icon icon--phone"
+                  aria-label="Call +1 234 555-55-55"
                 ></a>
               </div>
               <a
                 href="#menu"
                 class="icon icon--menu"
+                aria-label="Open menu"
               ></a>
             </div>
           </div>
@@ -93,18 +101,22 @@
         <div class="menu__content">
           <div class="top-bar menu__top">
             <a
-              href="#"
+              href="#top"
               class="top-bar__logo top-bar__logo--menu"
+              aria-label="Home"
             >
               <img
                 src="images/Menu_logo_mobile.svg"
                 alt="Base logo"
                 class="logo"
+                width="130"
+                height="38"
               />
             </a>
             <a
               href="#"
               class="icon icon--close"
+              aria-label="Close menu"
             ></a>
           </div>
           <div class="menu__bottom">
@@ -113,7 +125,7 @@
                 <li class="nav__item">
                   <a
                     class="nav__link"
-                    href="#"
+                    href="#top"
                   >
                     Home
                   </a>
@@ -191,16 +203,17 @@
             <h2 class="section-title">Compare Bikes</h2>
             <div class="compare-bikes__products">
               <article class="product compare-bikes__product">
-                <a
-                  href="#"
-                  class="product__link"
-                >
+                <div class="product__link">
                   <img
                     class="product__photo"
                     src="./images/products/Sporty-4.webp"
                     alt="Sporty 4"
+                    width="1874"
+                    height="1528"
+                    loading="lazy"
+                    decoding="async"
                   />
-                </a>
+                </div>
                 <h3 class="product__title">Sporty 4</h3>
                 <p class="product__description">
                   The iconic frame brought to a new performance height as a
@@ -209,16 +222,17 @@
                 <p class="product__price">$ 2 590</p>
               </article>
               <article class="product compare-bikes__product">
-                <a
-                  href="#"
-                  class="product__link"
-                >
+                <div class="product__link">
                   <img
                     class="product__photo"
                     src="./images/products/Ride-in-town-ST.webp"
                     alt="Ride in town ST"
+                    width="1872"
+                    height="1476"
+                    loading="lazy"
+                    decoding="async"
                   />
-                </a>
+                </div>
                 <h3 class="product__title">Ride in town ST</h3>
                 <p class="product__description">
                   An open frame for an upright riding position as the most
@@ -227,16 +241,17 @@
                 <p class="product__price">$ 2 590</p>
               </article>
               <article class="product compare-bikes__product">
-                <a
-                  href="#"
-                  class="product__link"
-                >
+                <div class="product__link">
                   <img
                     class="product__photo"
                     src="./images/products/Agile-ride-3.webp"
                     alt="Agile ride 3"
+                    width="1958"
+                    height="1504"
+                    loading="lazy"
+                    decoding="async"
                   />
-                </a>
+                </div>
                 <h3 class="product__title">Agile ride 3</h3>
                 <p class="product__description">
                   The lightweight frame that has earned its street tread as a
@@ -255,26 +270,28 @@
             <div class="details__wrapper">
               <article class="detail">
                 <div class="detail__photos">
-                  <a
-                    href="#"
-                    class="detail__link detail__link--wide"
-                  >
+                  <div class="detail__link detail__link--wide">
                     <img
                       class="detail__photo"
                       src="./images/details/Auto_unlock-wide.webp"
                       alt="Auto Unlock"
+                      width="672"
+                      height="321"
+                      loading="lazy"
+                      decoding="async"
                     />
-                  </a>
-                  <a
-                    href="#"
-                    class="detail__link detail__link--square"
-                  >
+                  </div>
+                  <div class="detail__link detail__link--square">
                     <img
                       class="detail__photo"
                       src="./images/details/Auto_unlock-square.webp"
                       alt="Auto Unlock"
+                      width="850"
+                      height="480"
+                      loading="lazy"
+                      decoding="async"
                     />
-                  </a>
+                  </div>
                 </div>
 
                 <h3 class="detail__title">Auto Unlock</h3>
@@ -286,26 +303,28 @@
               </article>
               <article class="detail">
                 <div class="detail__photos">
-                  <a
-                    href="#"
-                    class="detail__link detail__link--wide"
-                  >
+                  <div class="detail__link detail__link--wide">
                     <img
                       class="detail__photo"
                       src="./images/details/Range_&_Integrated_lights-wide.webp"
                       alt="Range & Integrated lights"
+                      width="850"
+                      height="480"
+                      loading="lazy"
+                      decoding="async"
                     />
-                  </a>
-                  <a
-                    href="#"
-                    class="detail__link detail__link--square"
-                  >
+                  </div>
+                  <div class="detail__link detail__link--square">
                     <img
                       class="detail__photo"
                       src="./images/details/Range_&_Integrated_lights-square.webp"
                       alt="Range & Integrated lights"
+                      width="324"
+                      height="320"
+                      loading="lazy"
+                      decoding="async"
                     />
-                  </a>
+                  </div>
                 </div>
 
                 <h3 class="detail__title">Range & Integrated lights</h3>
@@ -317,26 +336,28 @@
               </article>
               <article class="detail">
                 <div class="detail__photos">
-                  <a
-                    href="#"
-                    class="detail__link detail__link--square"
-                  >
+                  <div class="detail__link detail__link--square">
                     <img
                       class="detail__photo"
                       src="./images/details/Hydraulic_disc_brakes_&_Lightweight-square.webp"
                       alt="Hydraulic disc brakes & Lightweight"
+                      width="850"
+                      height="480"
+                      loading="lazy"
+                      decoding="async"
                     />
-                  </a>
-                  <a
-                    href="#"
-                    class="detail__link detail__link--wide"
-                  >
+                  </div>
+                  <div class="detail__link detail__link--wide">
                     <img
                       class="detail__photo"
                       src="./images/details/Hydraulic_disc_brakes_&_Lightweight-wide.webp"
                       alt="Hydraulic disc brakes & Lightweight"
+                      width="850"
+                      height="480"
+                      loading="lazy"
+                      decoding="async"
                     />
-                  </a>
+                  </div>
                 </div>
 
                 <h3 class="detail__title">
@@ -351,7 +372,7 @@
               </article>
               <div class="details__button-wrapper">
                 <a
-                  href="#"
+                  href="#contacts"
                   class="primary-button details__button"
                 >
                   Explore
@@ -409,7 +430,7 @@
 
               <div class="contacts__info">
                 <div class="contacts__info-item">
-                  <h4 class="contacts__info-title">Phone</h4>
+                  <h3 class="contacts__info-title">Phone</h3>
                   <a
                     class="contacts__info-text"
                     href="tel:+123455555555"
@@ -418,7 +439,7 @@
                   </a>
                 </div>
                 <div class="contacts__info-item">
-                  <h4 class="contacts__info-title">Email</h4>
+                  <h3 class="contacts__info-title">Email</h3>
                   <a
                     class="contacts__info-text"
                     href="mailto:hello@miami.com"
@@ -427,7 +448,7 @@
                   </a>
                 </div>
                 <div class="contacts__info-item">
-                  <h4 class="contacts__info-title">Address</h4>
+                  <h3 class="contacts__info-title">Address</h3>
                   <a
                     class="contacts__info-text"
                     href="https://www.google.com/maps/place/400+N+1st+Ave+STE+700,+Minneapolis,+MN+55401,+%D0%A1%D0%A8%D0%90/@44.9813258,-93.275706,17z/data=!3m1!4b1!4m6!3m5!1s0x52b3328fdf233887:0x3348e5113ed2472d!8m2!3d44.9813258!4d-93.2731311!16s%2Fg%2F11nyn_tfyt?entry=ttu&g_ep=EgoyMDI1MDgxMy4wIKXMDSoASAFQAw%3D%3D"
