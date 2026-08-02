@@ -33,6 +33,11 @@
   "browserslist": [
     "last 2 versions"
   ],
+  "targets": {
+    "default": {
+      "publicUrl": "./"
+    }
+  },
   "mateAcademy": {
     "projectType": "layout",
     "linters": {
