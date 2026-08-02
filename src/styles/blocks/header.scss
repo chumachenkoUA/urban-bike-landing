@@ -1,5 +1,5 @@
 .header {
-  background-image: url('../images/Cover_photo.png');
+  background-image: url('../images/Cover_photo.webp');
   background-position: 88%;
   background-size: cover;
 
@@ -27,7 +27,9 @@
     visibility: hidden;
     opacity: 0;
 
-    transition: all $anim-duration ease-in-out;
+    transition:
+      opacity $anim-duration ease-in-out,
+      visibility $anim-duration ease-in-out;
   }
 
   &__hover:hover &__hover-link {

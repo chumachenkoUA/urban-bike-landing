@@ -197,8 +197,7 @@
                 >
                   <img
                     class="product__photo"
-                    src="./images/products/Sporty-4.png"
-                    href="#"
+                    src="./images/products/Sporty-4.webp"
                     alt="Sporty 4"
                   />
                 </a>
@@ -216,7 +215,7 @@
                 >
                   <img
                     class="product__photo"
-                    src="./images/products/Ride-in-town-ST.png"
+                    src="./images/products/Ride-in-town-ST.webp"
                     alt="Ride in town ST"
                   />
                 </a>
@@ -234,7 +233,7 @@
                 >
                   <img
                     class="product__photo"
-                    src="./images/products/Agile-ride-3.png"
+                    src="./images/products/Agile-ride-3.webp"
                     alt="Agile ride 3"
                   />
                 </a>
@@ -262,7 +261,7 @@
                   >
                     <img
                       class="detail__photo"
-                      src="./images/details/Auto_unlock-wide.png"
+                      src="./images/details/Auto_unlock-wide.webp"
                       alt="Auto Unlock"
                     />
                   </a>
@@ -272,7 +271,7 @@
                   >
                     <img
                       class="detail__photo"
-                      src="./images/details/Auto_unlock-square.png"
+                      src="./images/details/Auto_unlock-square.webp"
                       alt="Auto Unlock"
                     />
                   </a>
@@ -293,7 +292,7 @@
                   >
                     <img
                       class="detail__photo"
-                      src="./images/details/Range_&_Integrated_lights-wide.png"
+                      src="./images/details/Range_&_Integrated_lights-wide.webp"
                       alt="Range & Integrated lights"
                     />
                   </a>
@@ -303,7 +302,7 @@
                   >
                     <img
                       class="detail__photo"
-                      src="./images/details/Range_&_Integrated_lights-square.png"
+                      src="./images/details/Range_&_Integrated_lights-square.webp"
                       alt="Range & Integrated lights"
                     />
                   </a>
@@ -324,7 +323,7 @@
                   >
                     <img
                       class="detail__photo"
-                      src="./images/details/Hydraulic_disc_brakes_&_Lightweight-square.png"
+                      src="./images/details/Hydraulic_disc_brakes_&_Lightweight-square.webp"
                       alt="Hydraulic disc brakes & Lightweight"
                     />
                   </a>
@@ -334,7 +333,7 @@
                   >
                     <img
                       class="detail__photo"
-                      src="./images/details/Hydraulic_disc_brakes_&_Lightweight-wide.png"
+                      src="./images/details/Hydraulic_disc_brakes_&_Lightweight-wide.webp"
                       alt="Hydraulic disc brakes & Lightweight"
                     />
                   </a>
@@ -366,29 +365,38 @@
           >
             <h2 class="section-title">Contact us</h2>
             <div class="contacts__wrapper">
+              <!-- GET is used because GitHub Pages does not support POST requests. -->
               <form
-                action="#"
+                action="."
+                method="get"
                 class="contacts__form"
-                onsubmit="this.reset(); return false;"
               >
                 <input
                   class="contacts__input"
                   type="text"
                   id="name"
+                  name="name"
                   placeholder="Name"
+                  autocomplete="name"
+                  aria-label="Name"
                   required
                 />
                 <input
                   class="contacts__input"
                   type="email"
                   id="email"
+                  name="email"
                   placeholder="Email"
+                  autocomplete="email"
+                  aria-label="Email"
                   required
                 />
                 <textarea
                   class="contacts__textarea"
                   id="message"
+                  name="message"
                   placeholder="Message"
+                  aria-label="Message"
                   required
                 ></textarea>
                 <button
